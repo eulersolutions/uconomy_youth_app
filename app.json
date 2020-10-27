@@ -1,31 +1,36 @@
 {
-  "expo": {
-    "name": "uconomy-youth-app",
-    "slug": "uconomy-youth-app",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/img/unl.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "package": "com.youth.uconomy"
-    }
-  }
+	"expo": {
+		"name": "uconomy-youth-app",
+		"slug": "uconomy-youth-app",
+		"platforms": [
+			"ios",
+			"android",
+			"web"
+		],
+		"version": "1.0.0",
+		"orientation": "portrait",
+		"icon": "./assets/icon.png",
+		"splash": {
+			"image": "./assets/img/unl.png",
+			"resizeMode": "contain",
+			"backgroundColor": "#ffffff"
+		},
+		"updates": {
+			"fallbackToCacheTimeout": 0
+		},
+		"assetBundlePatterns": [
+			"**/*"
+		],
+		"ios": {
+			"supportsTablet": true
+		},
+		"android": {
+			"icon": "./assets/icon.png",
+			"permissions": [
+				"READ_EXTERNAL_STORAGE",
+				"WRITE_EXTERNAL_STORAGE"
+			],
+			"package": "com.youth.uconomy"
+		}
+	}
 }
