@@ -247,7 +247,7 @@ pickDocument = async () => {
   render() {
     const { isLoading,isModalVisible,documentFileName,posts,documents } = this.state;
     return (
-      <Tabs>
+      <Tabs >
         <Tab heading="About">
           <Content>
             <MessageDialog ref="dialog" />
@@ -264,7 +264,7 @@ pickDocument = async () => {
             </View>
             <Card>
               <CardItem header bordered>
-                <CustomText content="Basic Information" />
+                <CustomText style={{color: "#fbca4b"}} content="Basic Information" />
               </CardItem>
               <CardItem bordered style={{ justifyContent: "space-between" }}>
                 <CustomText content="Full Name" />
@@ -347,14 +347,14 @@ pickDocument = async () => {
 
             <Card>
               <CardItem header bordered>
-                <CustomText content="Traits" />
+                <CustomText style={{color: "#fbca4b"}} content="Traits" />
               </CardItem>
               <CardItem bordered>
                 {this.props.profile.unl_personal_skills &&
                   this.parseItem(
                     this.props.profile.unl_personal_skills
                   ).map((item) => (
-                    <View style= {{ margin: 2, borderRadius:10, borderColor:'deepskyblue',borderWidth:1}} key={Global.getKey()}>
+                    <View style= {{ margin: 2, borderRadius:10, borderColor:'#fbca4b',borderWidth:1}} key={Global.getKey()}>
                     <CustomText
                       note={true}
                       content={item}
@@ -367,14 +367,14 @@ pickDocument = async () => {
             </Card>
             <Card>
               <CardItem header bordered>
-                <CustomText content="Skills" />
+                <CustomText style={{color: "#fbca4b"}} content="Skills" />
               </CardItem>
               <CardItem bordered>
                 {this.props.profile.unl_professional_skills &&
                   this.parseItem(
                     this.props.profile.unl_professional_skills
                   ).map((item) => (
-                    <View style= {{ margin: 2, borderRadius:10, borderColor:'deepskyblue',borderWidth:1}} key={Global.getKey()}>
+                    <View style= {{ margin: 2, borderRadius:10, borderColor:'#fbca4b',borderWidth:1}} key={Global.getKey()}>
 
                     <CustomText
                       style={{ margin: 2 }}
@@ -598,13 +598,16 @@ const styles = StyleSheet.create({
     color: "darkgrey",
     margin: 5,
   },
-  tabHeadingStyle: {},
+  tabHeadingStyle: {
+	//   backgroundColor: "#fcba4b"
+  },
   tabStyle: {
     color: "white",
     textAlign: "center",
     fontFamily: "Noto",
     color: "ghostwhite",
-    fontSize: 13,
+	fontSize: 13,
+	backgroundColor: "#fcba4b"
   },
   container: {
     flex: 1,

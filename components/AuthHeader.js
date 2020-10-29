@@ -9,12 +9,12 @@ class AuthHeader extends Component {
     render() {
         return (
             <View style={{flex:1,justifyContent:'center'}}>
-              <ImageBackground  source={ require('../assets/img/bg3.jpg')} style={Styles.image}>
-              </ImageBackground>
+              {/* <ImageBackground  source={ require('../assets/img/bg3.jpg')} style={Styles.image}>
+              </ImageBackground> */}
                 <Image
                 style={Styles.bannerImageStyle}
                 resizeMode='contain'
-                source={require('../assets/img/unl.png')}
+                source={require('../assets/img/ucon_youth_small.png')}
                 />
             </View>
         );

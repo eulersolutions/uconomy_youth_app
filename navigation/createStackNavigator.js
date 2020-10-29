@@ -36,7 +36,7 @@ function HeaderLeft(props) {
 
 function HeaderImage(props) {
   return (
-    <Image source = {require('../assets/img/unl.png')} style={{width:150,resizeMode:'contain'}}/>
+    <Image source = {require('../assets/img/ucon_youth_small.png')} style={{width:150,resizeMode:'contain'}}/>
   )
 }
 
